@@ -1,0 +1,57 @@
+:root{
+    --blue1: #255398;
+    --blue2: #002664;
+    --tan: #E5D9B2;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin: 10vh 12vw;
+}
+
+header, .top_head, .bot_head{
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    background-color: var(--tan);
+    padding: 1vh 5vw;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bot_head{
+    display: none;
+}
+
+.logo{
+    width: 15%;
+    max-width: 20vw;
+}
+
+h1{
+    color: white;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    font-size: max(3rem, 2rem);
+    text-align: center;
+}
+
+/*computer*/
+@media (min-width: 1000px){
+    .logo{
+        width: 10vw;
+    }
+    .bot_head{
+        display: flex;
+    }
+}
