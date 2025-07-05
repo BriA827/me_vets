@@ -1,5 +1,3 @@
-// const fs = require('node:fs')
-
 const postBtn = document.querySelector(".post_btn")
 const postSelect = document.getElementById("posts")
 
@@ -14,13 +12,6 @@ postBtn.addEventListener("click", ()=>{
     if (postSelect.value == "Department of Maine"){
         postTitle.textContent = postSelect.value
     } else {
-        // fs.readFile("../texts/ladies.txt", 'utf8', (err,data) =>{
-        //     if (err) {
-        //         console.error(err);
-        //         return;
-        //     }
-        //     console.log(data);
-        // })
         postTitle.textContent = "Post " + postSelect.value
         postImg1.src = "../post_images/post" + postSelect.value + ".png"} 
 })
