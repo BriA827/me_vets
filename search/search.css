@@ -10,8 +10,46 @@ input, select{
 .post_div{
     display: none;
     flex-direction: column;
+    justify-content: center;
 }
 
 .post_img1{
-    width: 50;
+    width: 60vw;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.418);
+    margin-bottom: 3vh;
+}
+
+.info{
+    color: var(--blue1);
+}
+
+.split{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*computer*/
+@media (min-width: 1000px){
+    .post_div{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .post_img1{
+        width: 30vw;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .split{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .split > div{
+        width: 50%;
+    }
 }

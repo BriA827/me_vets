@@ -11,6 +11,7 @@ body{
 
 main{
     margin: 3vh 8vw;
+    min-height: 67vh
 }
 
 header, .top_head, .bot_head, footer{
@@ -50,17 +51,20 @@ h1{
 h2{
     font-size: max(2.2rem, 1.5rem);
     color: var(--blue2);
+    margin-bottom: 2.3vh;
+}
+
+p{
+    font-size: larger;
 }
 
 footer{
     z-index: 1;
-    position: absolute;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--tan);
     width: 100vw;
     height: 6.5vh;
-    top: 93.5vh;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -72,6 +76,9 @@ footer > a{
 
 /*computer*/
 @media (min-width: 1000px){
+    main{
+        min-height: 75vh
+    }
     .logo{
         width: 6vw;
     }
