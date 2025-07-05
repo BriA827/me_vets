@@ -10,10 +10,10 @@ body{
 }
 
 main{
-    margin: 10vh 12vw;
+    margin: 3vh 8vw;
 }
 
-header, .top_head, .bot_head{
+header, .top_head, .bot_head, footer{
     display: flex;
     width: 90vw;
     justify-content: space-between;
@@ -21,12 +21,13 @@ header, .top_head, .bot_head{
 }
 
 header{
-    position: absolute;
+    z-index: 2;
+    position: sticky;
     left: 0;
     top: 0;
     flex-direction: column;
     background-color: var(--tan);
-    padding: 1vh 5vw;
+    width: 100vw;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,16 +43,39 @@ header{
 h1{
     color: white;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    font-size: max(3rem, 2rem);
+    font-size: max(2.7rem, 2rem);
     text-align: center;
+}
+
+h2{
+    font-size: max(2.2rem, 1.5rem);
+    color: var(--blue2);
+}
+
+footer{
+    z-index: 1;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--tan);
+    width: 100vw;
+    height: 6.5vh;
+    top: 93.5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > a{
+    color: var(--blue2);
+    text-decoration: none;
+    font-size: max(1.5rem, 1rem);
 }
 
 /*computer*/
 @media (min-width: 1000px){
     .logo{
-        width: 10vw;
+        width: 6vw;
     }
     .bot_head{
-        display: flex;
+        display: none;
     }
 }

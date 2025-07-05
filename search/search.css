@@ -1,0 +1,17 @@
+label{
+    font-size: max(1.3rem, 1rem);
+}
+
+input, select{
+    width: 7vw;
+    margin: 0 1vw;
+}
+
+.post_div{
+    display: none;
+    flex-direction: column;
+}
+
+.post_img1{
+    width: 50;
+}
