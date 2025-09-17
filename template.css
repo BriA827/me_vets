@@ -44,18 +44,22 @@ header{
 h1{
     color: white;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    font-size: max(2.7rem, 2rem);
+    font-size: max(2.6rem, 2rem);
     text-align: center;
 }
 
 h2{
-    font-size: max(2.2rem, 1.5rem);
+    font-size: max(2.6rem, 1.5rem);
     color: var(--blue2);
     margin-bottom: 2.3vh;
 }
 
-p{
-    font-size: larger;
+p, label{
+    font-size: max(2.2rem, 1.8rem);
+}
+
+option, button{
+    font-size: 1rem;
 }
 
 footer{
@@ -70,8 +74,13 @@ footer{
 
 footer > a{
     color: var(--blue2);
-    text-decoration: none;
     font-size: max(1.5rem, 1rem);
+}
+
+a{
+    text-decoration: none;
+    color: var(--blue1);
+    margin-bottom: 1vh;
 }
 
 /*computer*/
@@ -84,5 +93,14 @@ footer > a{
     }
     .bot_head{
         display: none;
+    }
+    h2{
+        font-size: max(2.2rem, 1.5rem);
+    }
+    p, label, a{
+        font-size: max(1.7rem, 1.2rem);
+    }
+    option, button{
+        font-size: 1rem;
     }
 }

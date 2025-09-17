@@ -1,0 +1,4 @@
+.chunk{
+    display: flex;
+    flex-direction: column;
+}
