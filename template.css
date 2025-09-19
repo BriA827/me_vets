@@ -11,7 +11,7 @@ body{
 
 main{
     margin: 3vh 8vw;
-    min-height: 67vh
+    min-height: 81.5vh
 }
 
 header, .top_head, .bot_head, footer{
@@ -74,13 +74,13 @@ footer{
 
 footer > a{
     color: var(--blue2);
-    font-size: max(1.5rem, 1rem);
 }
 
 a{
     text-decoration: none;
     color: var(--blue1);
     margin-bottom: 1vh;
+    font-size: xx-large;
 }
 
 /*computer*/
@@ -98,7 +98,7 @@ a{
         font-size: max(2.2rem, 1.5rem);
     }
     p, label, a{
-        font-size: max(1.7rem, 1.2rem);
+        font-size: max(1.6rem, 1.2rem);
     }
     option, button{
         font-size: 1rem;
